@@ -1,0 +1,25 @@
+Your Name
+
+Matt Vermont
+
+A brief summary of your selection
+	which trending topic
+	where is the data coming from
+
+I am going to use a sports betting api I found off google to get real time updates on bettings odds for mulitple sports.
+https://the-odds-api.com/liveapi/guides/v4/#overview
+As more people bet, the lines change either going up or down depending on which way the public is betting
+
+Whether using Hive or MapReduce
+
+Hive
+
+6 (or more) analysis questions
+
+1. Who is the biggest favorite in each sport on that particular night?
+2. Who is the biggest underdog in each sport on that particular night?
+3. How many home teams are favored to win?
+4. How many away teams are favored to win?
+5. What is the margin of victory for each favorite?
+6. Which site has the best line for a specific game?
+ 
