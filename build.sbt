@@ -9,6 +9,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "project1",
     libraryDependencies += scalaTest % Test,
+    libraryDependencies += "net.liftweb" %% "lift-json" % "3.5.0",
     libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.0"
   )
 

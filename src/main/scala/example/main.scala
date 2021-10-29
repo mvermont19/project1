@@ -10,14 +10,21 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.DriverManager;
 
+import net.liftweb.json._
+
+import scala.collection.immutable._
+
 object Main{
 
     def main(args: Array[String]){
- 
-
+        //GetUrlContent
+        //var con = connectToHive()
+        val t = new Tuple2("admin", true)
+        var users = Map("admin" -> new Tuple2("admin", true), "user" -> new Tuple2("user", false))
+        //userInterface(con, users)
     }
 
-    def connectToHive() {
+    def connectToHive(): Connection = {
         var con: java.sql.Connection = null;
         try {
             // For Hive2:
@@ -27,13 +34,25 @@ object Main{
             Class.forName(driverName);
 
             con = DriverManager.getConnection(conStr, "", "");
-            val stmt = con.createStatement();
-            stmt.executeQuery("Show databases");
-            System.out.println("show database successfully");
+            
+            //create db
+            //stmt.executeQuery("Show databases");
+            //System.out.println("show database successfully");
 
+            //create table
+            val tableName = "odds";
+            println(s"Dropping table $tableName..")
+            val stmt = con.createStatement();
+            stmt.execute("drop table IF EXISTS " + tableName);
+            println(s"Creating table $tableName..")
+            stmt.execute(
+                "create table " + tableName + " (key int, value string) row format delimited  fields terminated by ','"
+            );
+
+            //insert data
 
         } catch {
-            case ex => {
+            case ex: Throwable => {
                 ex.printStackTrace();
                 throw new Exception(s"${ex.getMessage}")
             }
@@ -42,19 +61,20 @@ object Main{
                 if (con != null)
                     con.close();
             } catch {
-                case ex => {
+                case ex: Throwable => {
                     ex.printStackTrace();
                     throw new Exception(s"${ex.getMessage}")
                 }
             }
         }
+        con
     }
 
-    def userInterface(){
+    def userInterface(con: Connection, users: Map[String,(String, Boolean)]){
         var answer: Int = 0
         var exit: Boolean = false
 
-        //login()
+        var user = login(users)
 
         while(!exit){
             println("")
@@ -94,19 +114,19 @@ object Main{
                     answer match {
                         case 1 => {
                             //all
-                            showAll(original)
+                            showAll(con, original)
                         }
                         case 2 => {
                             //search
-                            searchTeam(original)
+                            searchTeam(con, original)
                         }
                         case 3 => {
                             //Biggest (favorite)
-                            find(original, true)
+                            find(con, original, true)
                         }
                         case 4 => {
                             //Smallest (underdog)
-                            find(original, false)
+                            find(con, original, false)
                         }
                         case _ => {
                             println("Not a vaild choice please try again")
@@ -115,21 +135,39 @@ object Main{
                 }
                 case 4 => {
                     //user choices
-                    answer match {
-                        case 1 => {
+                    var isAdmin = checkAdmin(user, users)
+                    if(!isAdmin){
+                        answer = getUserInput(changesInfo, changesBasicChoices)
+                        answer match {
+                            case 1 => {
 
-                        }
-                        case 2 => {
+                            }
+                            case 2 => {
 
+                            }
+                            case _ => {
+                                println("Not a vaild choice please try again")
+                            }
                         }
-                        case 3 => {
+                    }
+                    else{
+                        answer = getUserInput(changesInfo, changesAdminChoices)
+                        answer match {
+                            case 1 => {
 
-                        }
-                        case 4 => {
+                            }
+                            case 2 => {
 
-                        }
-                        case _ => {
-                            println("Not a vaild choice please try again")
+                            }
+                            case 3 => {
+
+                            }
+                            case 4 => {
+
+                            }
+                            case _ => {
+                                println("Not a vaild choice please try again")
+                            }
                         }
                     }
                 }
@@ -176,17 +214,140 @@ object Main{
       answer
     }
 
-    def showAll(choice: Int): Unit = {
-        
+    /**
+      * This function is checking to make sure the user has a valid login and password
+      */
+    def login(users: Map[String,(String, Boolean)]): String = {
+        var username = ""
+        var goodLogin = false
+        while(!goodLogin){
+            print("Please enter your username: ")
+            username = StdIn.readLine()
+            println(username)
+            if(users.keySet.contains(username)){
+                print("Please enter your password: ")
+                var password = StdIn.readLine()
+                println(password)
+                if(users.get(username).equals(password)){ //this is wrong
+                    println("Welcome " + username)
+                    goodLogin = true
+                }
+                else{
+                    println("Password incorrect. Please try again")
+                }
+            }
+            else{
+                println("Username not found. Please try again")
+            }
+        }
+        username
     }
 
-    def searchTeam(choice: Int): Unit = {
+    /**
+      * This function prints out all the lines saved in the database from each book
+      *
+      * @param con
+      * @param choice
+      */
+    def showAll(con: Connection, choice: Int): Unit = {
+        var sql = "select * from odds"
+        choice match {
+            case 1 => {
+                sql += " where markets = h2h"
+            }
+            case 2 => {
+                sql += " where markets = spreads"
+            }
+            case 3 => {
+                sql += " where markets = totals"
+            }
+        }
+        
+        System.out.println("Running: " + sql);
+        val stmt = con.createStatement();
+        val res = stmt.executeQuery(sql);
+        while (res.next()) {
+            System.out.println(
+                String.valueOf(res.getInt(1))
+            );
+        }
+    }
+
+    /**
+      * This prints out the lines for a specific team from each book
+      *
+      * @param con
+      * @param choice
+      */
+    def searchTeam(con: Connection, choice: Int): Unit = {
         print("Which team would you like to find: ")
         val team: String = StdIn.readLine()
+        choice match{
+            case 1 => {
+                //team h2h
 
+            }
+            case 2 => {
+                //team spread
+
+            }
+            case 3 => {
+                //team over
+
+            }
+        }
     }
 
-    def find(choice: Int, findFav: Boolean): Unit = {
+    /**
+      * This prints out the biggest favorite (lowest neg number) or biggest underdog(biggest pos number)
+      * or the biggest over based off the choices
+      *
+      * @param con
+      * @param choice
+      * @param findFav
+      */
+    def find(con: Connection, choice: Int, findFav: Boolean): Unit = {
+        choice match {
+            case 1 => {
+                var num: Int = 0
+                if(findFav){
+                    //h2h biggest favorite
 
+                }
+                else{
+                    //h2h biggest underdog
+
+                }
+            }
+            case 2 => {
+                if(findFav){
+                    //spread biggest favorite
+
+                }
+                else{
+                    //spread biggest underdog
+
+                }
+            }
+            case 3 => {
+                if(findFav){
+                    //biggest over
+
+                }
+                else{
+                    //smallest over
+
+                }
+
+            }
+        }
     }
+
+    def checkAdmin(user: String, users: Map[String, (String, Boolean)]): Boolean = {
+        var isAdmin = false
+        if(users.get(user) == true){ //this is wrong
+            isAdmin = true
+        }
+        isAdmin
+    }   
 }
