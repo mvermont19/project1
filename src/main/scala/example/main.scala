@@ -11,17 +11,31 @@ import java.sql.Statement;
 import java.sql.DriverManager;
 
 import net.liftweb.json._
+import net.liftweb.json.Serialization.write
 
 import scala.collection.immutable._
 
-object Main{
+object project{
+
+    var users = Map("admin" -> new Tuple2("admin", true), "user" -> new Tuple2("user", false))
+    val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/"
+
+    case class Line(name: String, price: Int, point: Int)
+    case class Book(key: String, outcome: Array[Line])    
+    case class Maker(key: String, title: String, updated: String, markets: Book)
+
 
     def main(args: Array[String]){
-        //GetUrlContent
-        //var con = connectToHive()
-        val t = new Tuple2("admin", true)
-        var users = Map("admin" -> new Tuple2("admin", true), "user" -> new Tuple2("user", false))
-        //userInterface(con, users)
+        val result = GetUrlContent.simpleApi(path)
+
+        implicit val formats = DefaultFormats
+        val jsonString = write(result)
+
+        GetUrlContent.createFile(path, result)
+        var con = connectToHive()
+        //val t = new Tuple2("admin", true)
+        
+        userInterface(con)
     }
 
     def connectToHive(): Connection = {
@@ -29,27 +43,30 @@ object Main{
         try {
             // For Hive2:
             var driverName = "org.apache.hive.jdbc.HiveDriver"
-            val conStr = "jdbc:hive2://sandbox-hdp.hortonworks.com:10000/default";
+            val conStr = "jdbc:hive2://sandbox-hdp.hortonworks.com:10000/bets";
 
             Class.forName(driverName);
 
             con = DriverManager.getConnection(conStr, "", "");
             
             //create db
-            //stmt.executeQuery("Show databases");
+            val stmt = con.createStatement()
+            //var res = stmt.executeQuery("create database if not exists bets")
+            var res = stmt.executeQuery("Show databases");
+            if (res.next()) {
+                System.out.println(res.getString(1));
+            }
             //System.out.println("show database successfully");
+            //res = stmt.executeQuery("use bets")
 
             //create table
             val tableName = "odds";
-            println(s"Dropping table $tableName..")
-            val stmt = con.createStatement();
+            //println(s"Dropping table $tableName..")
             stmt.execute("drop table IF EXISTS " + tableName);
             println(s"Creating table $tableName..")
             stmt.execute(
-                "create table " + tableName + " (key int, value string) row format delimited  fields terminated by ','"
+                "create table " + tableName + s" (key int, sports_key string, sports_title string, start_time string, home_team string, away_team string) row format delimited  fields terminated by ','"
             );
-
-            //insert data
 
         } catch {
             case ex: Throwable => {
@@ -57,30 +74,43 @@ object Main{
                 throw new Exception(s"${ex.getMessage}")
             }
         } finally {
-            try {
-                if (con != null)
-                    con.close();
-            } catch {
-                case ex: Throwable => {
-                    ex.printStackTrace();
-                    throw new Exception(s"${ex.getMessage}")
-                }
-            }
+            // try {
+            //     if (con != null)
+            //         con.close();
+            // } catch {
+            //     case ex: Throwable => {
+            //         ex.printStackTrace();
+            //         throw new Exception(s"${ex.getMessage}")
+            //     }
+            // }
         }
         con
     }
 
-    def userInterface(con: Connection, users: Map[String,(String, Boolean)]){
+    /**
+      * This will load the data into the table
+      *
+      * @param con
+      */
+    def loadData(con: Connection){
+        println("Eventually load data")
+    }
+
+    /**
+      * This is what the user wil interact with
+      * @param con
+      */
+    def userInterface(con: Connection){
         var answer: Int = 0
         var exit: Boolean = false
 
-        var user = login(users)
+        var user = login()
 
         while(!exit){
             println("")
             Thread.sleep(1000)
 
-            val intro: String = "Please choose an option to learn about the Betting Lines: "
+            val intro: String = s"${user}, Please choose an option to learn about the Betting Lines: "
             val startingScreen: String = "1. Head to Head (moneyline) \n2. Spread \n3. Totals \n4. User Options \n5. Exit"
 
             val h2hInfo: String = "What would you like to know about the Head to Head bets: "
@@ -92,7 +122,7 @@ object Main{
 
             val changesInfo: String = "What changes would you like to make to your account: "
             val changesBasicChoices: String = "1. Change username \n2. Change password"
-            val changesAdminChoices: String = "1. Change username \n2. Change password \n3. Something else (add user?) "
+            val changesAdminChoices: String = "1. Change username \n2. Change password \n3. Load Data \n4. Add User \n5. Show all users "
 
             answer = getUserInput(intro, startingScreen)
             answer match {
@@ -135,15 +165,15 @@ object Main{
                 }
                 case 4 => {
                     //user choices
-                    var isAdmin = checkAdmin(user, users)
+                    var isAdmin = checkAdmin(user)
                     if(!isAdmin){
                         answer = getUserInput(changesInfo, changesBasicChoices)
                         answer match {
                             case 1 => {
-
+                                user = changeUserName(user)
                             }
                             case 2 => {
-
+                                changePassword(user)
                             }
                             case _ => {
                                 println("Not a vaild choice please try again")
@@ -154,16 +184,19 @@ object Main{
                         answer = getUserInput(changesInfo, changesAdminChoices)
                         answer match {
                             case 1 => {
-
+                                user = changeUserName(user)
                             }
                             case 2 => {
-
+                                changePassword(user)
                             }
                             case 3 => {
-
+                                loadData(con)
                             }
                             case 4 => {
-
+                                addUser()
+                            }
+                            case 5 => {
+                                showUsers()
                             }
                             case _ => {
                                 println("Not a vaild choice please try again")
@@ -174,6 +207,15 @@ object Main{
                 case 5 => {
                     //exit
                     exit = true
+                    try {
+                        if (con != null)
+                            con.close();
+                    } catch {
+                        case ex: Throwable => {
+                            ex.printStackTrace();
+                            throw new Exception(s"${ex.getMessage}")
+                        }
+                    }                    
                 }
             }
         
@@ -195,7 +237,6 @@ object Main{
         println(strings(0))
         println(strings(1))
         userInput = StdIn.readLine()
-        println(userInput)
         if(userInput.isEmpty())  {
           println("Please give an answer")
         }
@@ -217,18 +258,16 @@ object Main{
     /**
       * This function is checking to make sure the user has a valid login and password
       */
-    def login(users: Map[String,(String, Boolean)]): String = {
+    def login(): String = {
         var username = ""
         var goodLogin = false
         while(!goodLogin){
             print("Please enter your username: ")
             username = StdIn.readLine()
-            println(username)
             if(users.keySet.contains(username)){
                 print("Please enter your password: ")
                 var password = StdIn.readLine()
-                println(password)
-                if(users.get(username).equals(password)){ //this is wrong
+                if(users.get(username).get._1.equals(password)){ 
                     println("Welcome " + username)
                     goodLogin = true
                 }
@@ -253,13 +292,13 @@ object Main{
         var sql = "select * from odds"
         choice match {
             case 1 => {
-                sql += " where markets = h2h"
+                sql += " where markets.key = h2h"
             }
             case 2 => {
-                sql += " where markets = spreads"
+                sql += " where markets.key = spreads"
             }
             case 3 => {
-                sql += " where markets = totals"
+                sql += " where markets.key = totals"
             }
         }
         
@@ -282,19 +321,31 @@ object Main{
     def searchTeam(con: Connection, choice: Int): Unit = {
         print("Which team would you like to find: ")
         val team: String = StdIn.readLine()
+        var sql = "select * from odds "
         choice match{
             case 1 => {
                 //team h2h
-
+                sql += s" where markets.key = h2h and (home_team = ${team} or away_team = ${team})"
             }
             case 2 => {
                 //team spread
+                sql += s" where markets.key = spreads and (home_team = ${team} or away_team = ${team})"
 
             }
             case 3 => {
                 //team over
+                sql += s" where markets.key = totals and (home_team = ${team} or away_team = ${team})"
 
             }
+        }
+        
+        System.out.println("Running: " + sql);
+        val stmt = con.createStatement();
+        val res = stmt.executeQuery(sql);
+        while (res.next()) {
+            System.out.println(
+                String.valueOf(res.getInt(1))
+            );
         }
     }
 
@@ -343,11 +394,122 @@ object Main{
         }
     }
 
-    def checkAdmin(user: String, users: Map[String, (String, Boolean)]): Boolean = {
+    /**
+      * Returns if the user is an admin or not
+      *
+      * @param user
+      * @return
+      */
+    def checkAdmin(user: String): Boolean = {
         var isAdmin = false
-        if(users.get(user) == true){ //this is wrong
+        if(users.get(user).get._2 == true){ 
             isAdmin = true
         }
         isAdmin
     }   
+
+    /**
+      * This changes the username of the current user and returns it
+      */
+    def changeUserName(user: String): String ={
+        var test = login() //gotta change
+        var newUser = ""
+        if(test.equals(user)){
+            print("What would you like to change your username to: ")
+            newUser = StdIn.readLine()
+            if(!users.keySet.contains(newUser)){
+                val pass = users.get(user).get
+                users = users.-(user)
+                val t = (newUser, pass)
+                users += t
+                println(s"User name is now: ${newUser}")
+            }
+        }
+        newUser
+    }
+
+    /**
+      * This changes the password of the current user
+      */
+    def changePassword(user: String){
+        var test = login() //gotta change
+        if(test.equals(user)){
+            print("What would you like to change your password to (Between 8-16 characters): ")
+            val newPass = StdIn.readLine()
+            if(checkPassword(newPass)){
+                print("Please retype password: ")
+                val pass2 = StdIn.readLine()
+                if(checkPassword(pass2) && newPass.equals(pass2)){
+                    val t = (user, (newPass, users.get(user).get._2))
+                    users += t
+                    println("Password has been updated")
+                }
+            }    
+        }
+    }
+
+    /**
+      * This adds another user to the list of eligible users
+      */
+    def addUser(){
+        var added: Boolean = false
+        while (!added){
+            print("Type in a username: ")
+            val newUser = StdIn.readLine()
+            if(!users.contains(newUser)){
+                print("Please give a password (Between 8-16 characters): ")
+                val pass1 = StdIn.readLine()
+                if(checkPassword(pass1)){
+                    print("Please retype password: ")
+                    val pass2 = StdIn.readLine()
+                    if(checkPassword(pass2) && pass1.equals(pass2)){
+                        print("Give this user admin priviladges (Type 'y' or 'n'): ")
+                        val admin = StdIn.readLine()
+                        admin match {
+                            case "y" => {
+                                val t = (newUser, (pass1, true))
+                                users += t
+                                added = true
+                            }
+                            case "n" => {
+                                val t = (newUser, (pass1, false))
+                                users += t
+                                added = true
+                            }
+                            case _ => {
+                                println("Not a valid response")
+                            }
+                        }
+                    }
+                    else{
+                        println("Passwords do not match, try again")
+                    }
+                }
+                else{
+                    println("Password does not meet specs, try again")
+                }
+            }
+            else{
+                println("Username already taken, try again")
+            }
+
+        }
+    }
+
+    /**
+      * This is a helper method to check and make sure the password meets the specs
+      */
+    def checkPassword(pass: String): Boolean = {
+        pass.length() >= 8 && pass.length() <= 16
+    }
+
+    /**
+      * Displays all the users
+      */
+    def showUsers() {
+        for(k <- users.keySet){
+            println("Username \t Password \t Is Admin")
+            println(s"${k} \t\t ${users.get(k).get._1} \t\t ${users.get(k).get._2}")
+        }
+    }
 }

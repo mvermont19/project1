@@ -200,7 +200,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "C:\\Users\\matth\\.jabba\\jdk\\adopt@1.8.0-292\\jre",
+                "home": "C:\\Program Files\\Eclipse Foundation\\jdk-11.0.12.7-hotspot",
                 "options": [
                     "-Duser.dir=C:\\Users\\matth\\revature\\project1\\project"
                 ]
