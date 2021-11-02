@@ -12554,3 +12554,2214 @@ No more data in the client stdin, exiting...
 [0m2021.11.01 17:24:28 INFO  shutting down Metals[0m
 [0m2021.11.01 17:24:28 INFO  Shut down connection with build server.[0m
 [0m2021.11.01 17:24:28 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:24:43 INFO  Started: Metals version 0.10.8 in workspace 'C:\Users\matth\revature\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.11.01 17:24:44 INFO  time: initialize in 0.78s[0m
+[0m2021.11.01 17:24:44 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:24:44 INFO  skipping build import with status 'Failed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 36894'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:36894...
+The server is listening for incoming connections at tcp://127.0.0.1:36894...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 17:24:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:24:46 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 41922'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:41922...
+The server is listening for incoming connections at tcp://127.0.0.1:41922...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 17:24:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:24:47 INFO  time: Connected to build server in 2.25s[0m
+[0m2021.11.01 17:24:47 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:24:48 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.01 17:24:50 INFO  time: code lens generation in 4.89s[0m
+[0m2021.11.01 17:24:50 INFO  time: Imported build in 0.29s[0m
+[0m2021.11.01 17:24:58 INFO  time: indexed workspace in 7.97s[0m
+[0m2021.11.01 17:24:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:24:59 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:25:00 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:25:00 INFO  time: compiled root in 1.44s[0m
+[0m2021.11.01 17:25:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:25:02 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:25:02 INFO  time: compiled root in 0.55s[0m
+[0m2021.11.01 17:25:13 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals843991423485222290\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:25:16 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:25:17 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:25:18 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:25:20 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:25:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:25:20 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:25:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:25:26 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:25:26 INFO  [info] compiling 1 Scala source to C:\Users\matth\revature\project1\project\target\scala-2.12\sbt-1.0\classes ...[0m
+[0m2021.11.01 17:25:31 INFO  [info] done compiling[0m
+[0m2021.11.01 17:25:31 INFO  [success] Total time: 11 s, completed Nov 1, 2021 5:25:31 PM[0m
+[0m2021.11.01 17:25:37 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:25:37 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:25:40 INFO  [warn] [0m
+[0m2021.11.01 17:25:40 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:25:40 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:25:40 INFO  [error]   Not found[0m
+[0m2021.11.01 17:25:40 INFO  [error]   Not found[0m
+[0m2021.11.01 17:25:40 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:25:40 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:25:40 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:25:40 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:25:40 INFO  [error]   Not found[0m
+[0m2021.11.01 17:25:40 INFO  [error]   Not found[0m
+[0m2021.11.01 17:25:40 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:25:40 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:25:40 INFO  [error] Total time: 3 s, completed Nov 1, 2021 5:25:40 PM[0m
+[0m2021.11.01 17:25:40 INFO  time: ran 'sbt bloopInstall' in 27s[0m
+[0m2021.11.01 17:25:40 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals843991423485222290\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:25:40 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:25:40 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:25:40 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.11.01 17:25:40 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:25:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:25:41 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:25:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:25:40 INFO  time: Connected to build server in 0.85s[0m
+[0m2021.11.01 17:25:40 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:25:41 INFO  time: Imported build in 0.14s[0m
+[0m2021.11.01 17:25:43 INFO  time: indexed workspace in 1.58s[0m
+[0m2021.11.01 17:25:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:25:43 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:25:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:25:44 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:25:44 INFO  time: compiled root in 1.19s[0m
+[0m2021.11.01 17:25:49 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals1198870494393190089\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:25:51 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:25:53 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:25:53 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:25:54 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:25:54 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:25:57 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:25:57 INFO  [success] Total time: 3 s, completed Nov 1, 2021 5:25:58 PM[0m
+[0m2021.11.01 17:25:57 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:25:57 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:25:59 INFO  [warn] [0m
+[0m2021.11.01 17:25:59 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:25:59 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:25:59 INFO  [error]   Not found[0m
+[0m2021.11.01 17:25:59 INFO  [error]   Not found[0m
+[0m2021.11.01 17:25:59 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:25:59 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:25:59 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:25:59 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:25:59 INFO  [error]   Not found[0m
+[0m2021.11.01 17:25:59 INFO  [error]   Not found[0m
+[0m2021.11.01 17:25:59 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:25:59 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:25:59 INFO  [error] Total time: 1 s, completed Nov 1, 2021 5:25:59 PM[0m
+[0m2021.11.01 17:25:59 INFO  time: ran 'sbt bloopInstall' in 10s[0m
+[0m2021.11.01 17:25:59 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals1198870494393190089\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:25:59 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:25:59 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:25:59 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:25:59 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:26:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:26:00 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:25:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:25:59 INFO  time: Connected to build server in 0.79s[0m
+[0m2021.11.01 17:25:59 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:25:59 INFO  time: Imported build in 0.1s[0m
+[0m2021.11.01 17:26:01 INFO  time: indexed workspace in 1.14s[0m
+[0m2021.11.01 17:26:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:26:02 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:26:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:26:02 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:26:02 INFO  time: compiled root in 0.92s[0m
+[0m2021.11.01 17:26:19 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals4965649695084425371\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:26:21 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:26:22 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:26:22 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:26:24 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:26:24 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:26:27 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:26:27 INFO  [success] Total time: 3 s, completed Nov 1, 2021 5:26:27 PM[0m
+[0m2021.11.01 17:26:27 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:26:27 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:26:29 INFO  [warn] [0m
+[0m2021.11.01 17:26:29 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:26:29 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:26:29 INFO  [error]   Not found[0m
+[0m2021.11.01 17:26:29 INFO  [error]   Not found[0m
+[0m2021.11.01 17:26:29 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:26:29 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:26:29 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:26:29 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:26:29 INFO  [error]   Not found[0m
+[0m2021.11.01 17:26:29 INFO  [error]   Not found[0m
+[0m2021.11.01 17:26:29 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:26:29 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:26:29 INFO  [error] Total time: 1 s, completed Nov 1, 2021 5:26:29 PM[0m
+[0m2021.11.01 17:26:29 INFO  time: ran 'sbt bloopInstall' in 9.93s[0m
+[0m2021.11.01 17:26:29 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals4965649695084425371\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:26:29 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:26:29 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:26:29 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:26:29 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:26:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:26:29 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:26:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:26:30 INFO  time: Connected to build server in 0.71s[0m
+[0m2021.11.01 17:26:30 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:26:29 INFO  time: Imported build in 0.11s[0m
+[0m2021.11.01 17:26:31 INFO  time: indexed workspace in 1.23s[0m
+[0m2021.11.01 17:26:31 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:26:31 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:26:31 INFO  time: compiled root in 0.4s[0m
+[0m2021.11.01 17:26:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:26:38 INFO  shutting down Metals[0m
+[0m2021.11.01 17:26:38 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:26:38 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:26:56 INFO  Started: Metals version 0.10.8 in workspace 'C:\Users\matth\revature\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.11.01 17:26:56 INFO  time: initialize in 0.66s[0m
+[0m2021.11.01 17:26:57 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:26:56 INFO  skipping build import with status 'Failed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 35361'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:35361...
+The server is listening for incoming connections at tcp://127.0.0.1:35361...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 17:26:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:26:58 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 44016'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:44016...
+The server is listening for incoming connections at tcp://127.0.0.1:44016...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 17:26:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:26:59 INFO  time: Connected to build server in 2.12s[0m
+[0m2021.11.01 17:26:59 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:27:01 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.01 17:27:03 INFO  time: Imported build in 0.47s[0m
+[0m2021.11.01 17:27:07 INFO  time: code lens generation in 9.29s[0m
+[0m2021.11.01 17:27:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:11 INFO  time: indexed workspace in 8.02s[0m
+[0m2021.11.01 17:27:11 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:27:11 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:27:12 INFO  time: compiled root in 1.2s[0m
+[0m2021.11.01 17:27:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:14 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:27:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:14 INFO  time: compiled root in 0.43s[0m
+[0m2021.11.01 17:27:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:18 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:27:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:28:02 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:28:02 INFO  time: compiled root in 0.51s[0m
+[0m2021.11.01 17:28:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:28:11 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals7399258407056896019\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:28:13 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:28:14 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:28:14 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:28:15 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:28:15 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:28:19 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:28:19 INFO  [info] compiling 1 Scala source to C:\Users\matth\revature\project1\project\target\scala-2.12\sbt-1.0\classes ...[0m
+[0m2021.11.01 17:28:22 INFO  [info] done compiling[0m
+[0m2021.11.01 17:28:22 INFO  [success] Total time: 7 s, completed Nov 1, 2021 5:28:23 PM[0m
+[0m2021.11.01 17:28:26 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:28:26 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:28:27 INFO  [warn] [0m
+[0m2021.11.01 17:28:27 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:28:27 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:28:27 INFO  [error]   Not found[0m
+[0m2021.11.01 17:28:27 INFO  [error]   Not found[0m
+[0m2021.11.01 17:28:27 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:28:27 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:28:27 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:28:27 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:28:27 INFO  [error]   Not found[0m
+[0m2021.11.01 17:28:27 INFO  [error]   Not found[0m
+[0m2021.11.01 17:28:27 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:28:27 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:28:27 INFO  [error] Total time: 1 s, completed Nov 1, 2021 5:28:27 PM[0m
+[0m2021.11.01 17:28:27 INFO  time: ran 'sbt bloopInstall' in 16s[0m
+[0m2021.11.01 17:28:27 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals7399258407056896019\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:28:27 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:28:27 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.11.01 17:28:27 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:28:27 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:28:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:28:28 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:28:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:28:27 INFO  time: Connected to build server in 0.69s[0m
+[0m2021.11.01 17:28:27 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:28:29 INFO  time: indexed workspace in 1.21s[0m
+[0m2021.11.01 17:28:29 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:28:31 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:28:31 INFO  time: compiled root in 1.16s[0m
+[0m2021.11.01 17:28:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:28:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:29:24 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:29:24 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 17:29:24 INFO  time: compiled root in 0.4s[0m
+[0m2021.11.01 17:29:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:29:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:30:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:30:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:30:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:22 INFO  Can not organize imports if file has error[0m
+[0m2021.11.01 17:36:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:36:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:24 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:37:24 INFO  time: compiled root in 0.59s[0m
+[0m2021.11.01 17:37:26 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:37:26 INFO  time: compiled root in 0.27s[0m
+[0m2021.11.01 17:37:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:37:31 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:37:31 INFO  time: compiled root in 0.44s[0m
+[0m2021.11.01 17:37:33 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:37:33 INFO  time: compiled root in 0.3s[0m
+[0m2021.11.01 17:37:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:16 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals5781195375572842092\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:38:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:18 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:38:18 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:38:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:19 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:38:19 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:38:19 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:38:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:23 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:38:23 INFO  [success] Total time: 3 s, completed Nov 1, 2021 5:38:23 PM[0m
+[0m2021.11.01 17:38:23 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:38:23 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:38:25 INFO  [warn] [0m
+[0m2021.11.01 17:38:25 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:38:25 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:38:25 INFO  [error]   Not found[0m
+[0m2021.11.01 17:38:25 INFO  [error]   Not found[0m
+[0m2021.11.01 17:38:25 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:38:25 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:38:25 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:38:25 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:38:25 INFO  [error]   Not found[0m
+[0m2021.11.01 17:38:25 INFO  [error]   Not found[0m
+[0m2021.11.01 17:38:25 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:38:25 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:38:25 INFO  [error] Total time: 1 s, completed Nov 1, 2021 5:38:25 PM[0m
+[0m2021.11.01 17:38:25 INFO  time: ran 'sbt bloopInstall' in 8.95s[0m
+[0m2021.11.01 17:38:25 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals5781195375572842092\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:38:25 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:38:25 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:38:25 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:38:25 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:38:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:38:25 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:38:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:38:25 INFO  time: Connected to build server in 0.7s[0m
+[0m2021.11.01 17:38:25 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:38:27 INFO  time: indexed workspace in 1.08s[0m
+[0m2021.11.01 17:38:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:38:27 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:38:28 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:38:27 INFO  time: compiled root in 0.71s[0m
+[0m2021.11.01 17:38:55 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals8891570714761894932\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:38:56 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:38:56 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:38:57 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:38:57 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:38:57 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:39:00 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:39:00 INFO  [success] Total time: 2 s, completed Nov 1, 2021 5:39:01 PM[0m
+[0m2021.11.01 17:39:03 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:39:03 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:39:05 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.11.01 17:39:05 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.11.01 17:39:05 INFO  [success] Total time: 2 s, completed Nov 1, 2021 5:39:05 PM[0m
+[0m2021.11.01 17:39:05 INFO  time: ran 'sbt bloopInstall' in 10s[0m
+[0m2021.11.01 17:39:05 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:39:05 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:39:05 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:39:05 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:39:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:39:06 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:39:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:39:05 INFO  time: Connected to build server in 0.65s[0m
+[0m2021.11.01 17:39:05 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:39:08 INFO  time: indexed workspace in 1.46s[0m
+[0m2021.11.01 17:39:08 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:39:08 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:39:08 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:39:08 INFO  time: compiled root in 0.36s[0m
+[0m2021.11.01 17:39:21 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals8681875225376541372\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:39:23 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:39:23 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:39:24 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:39:24 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:39:24 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:39:27 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:39:27 INFO  [success] Total time: 3 s, completed Nov 1, 2021 5:39:28 PM[0m
+[0m2021.11.01 17:39:30 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:39:30 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:39:31 INFO  [warn] [0m
+[0m2021.11.01 17:39:31 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:39:31 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:39:31 INFO  [error]   Not found[0m
+[0m2021.11.01 17:39:31 INFO  [error]   Not found[0m
+[0m2021.11.01 17:39:31 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:39:31 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:39:31 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:39:31 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:39:31 INFO  [error]   Not found[0m
+[0m2021.11.01 17:39:31 INFO  [error]   Not found[0m
+[0m2021.11.01 17:39:31 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:39:31 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:39:31 INFO  [error] Total time: 1 s, completed Nov 1, 2021 5:39:31 PM[0m
+[0m2021.11.01 17:39:31 INFO  time: ran 'sbt bloopInstall' in 10s[0m
+[0m2021.11.01 17:39:31 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals8681875225376541372\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:39:31 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:39:31 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:39:31 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:39:31 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:39:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:39:32 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:39:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:39:32 INFO  time: Connected to build server in 0.63s[0m
+[0m2021.11.01 17:39:32 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:39:33 INFO  time: indexed workspace in 0.98s[0m
+[0m2021.11.01 17:39:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:39:33 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:39:33 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:39:38 INFO  time: compiled root in 5.15s[0m
+[0m2021.11.01 17:39:55 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.01 17:40:04 INFO  skipping build import with status 'Failed'[0m
+[0m2021.11.01 17:40:07 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals6274008880132313218\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:40:09 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:40:10 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:40:10 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:40:12 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:40:12 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:40:16 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:40:16 INFO  [success] Total time: 4 s, completed Nov 1, 2021 5:40:16 PM[0m
+[0m2021.11.01 17:40:16 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:40:16 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:40:18 INFO  [warn] [0m
+[0m2021.11.01 17:40:18 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:40:18 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:40:18 INFO  [error]   Not found[0m
+[0m2021.11.01 17:40:18 INFO  [error]   Not found[0m
+[0m2021.11.01 17:40:18 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:40:18 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:40:18 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:40:18 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:40:18 INFO  [error]   Not found[0m
+[0m2021.11.01 17:40:18 INFO  [error]   Not found[0m
+[0m2021.11.01 17:40:18 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:40:18 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:40:18 INFO  [error] Total time: 1 s, completed Nov 1, 2021 5:40:18 PM[0m
+[0m2021.11.01 17:40:18 INFO  time: ran 'sbt bloopInstall' in 10s[0m
+[0m2021.11.01 17:40:18 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals6274008880132313218\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:40:18 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:40:18 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:40:18 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:40:18 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:40:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:40:18 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:40:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:40:19 INFO  time: Connected to build server in 0.9s[0m
+[0m2021.11.01 17:40:19 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:40:19 INFO  time: Imported build in 0.13s[0m
+[0m2021.11.01 17:40:21 INFO  time: indexed workspace in 1.66s[0m
+[0m2021.11.01 17:40:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:40:21 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:40:23 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:40:23 INFO  time: compiled root in 1.78s[0m
+[0m2021.11.01 17:44:06 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals2775641199377443487\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:44:09 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:44:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:10 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:44:11 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:44:13 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:44:13 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:44:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:17 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:44:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:17 INFO  [success] Total time: 4 s, completed Nov 1, 2021 5:44:17 PM[0m
+[0m2021.11.01 17:44:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:21 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:44:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:21 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:44:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:23 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.11.01 17:44:23 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.11.01 17:44:23 INFO  [success] Total time: 2 s, completed Nov 1, 2021 5:44:23 PM[0m
+[0m2021.11.01 17:44:23 INFO  time: ran 'sbt bloopInstall' in 17s[0m
+[0m2021.11.01 17:44:23 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:44:23 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:44:23 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:44:23 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:44:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:44:24 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:44:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:44:24 INFO  time: Connected to build server in 1.16s[0m
+[0m2021.11.01 17:44:24 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:44:25 INFO  time: Imported build in 0.13s[0m
+[0m2021.11.01 17:44:26 INFO  time: indexed workspace in 1.75s[0m
+[0m2021.11.01 17:44:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:26 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:44:28 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:44:28 INFO  time: compiled root in 1.06s[0m
+[0m2021.11.01 17:44:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:33 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:44:33 INFO  C:\Users\matth\revature\project1\src\main\scala\example\api.scala:24:73: stale bloop error: unclosed string literal
+    val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/""
+                                                                        ^[0m
+[0m2021.11.01 17:44:33 INFO  time: compiled root in 0.21s[0m
+[0m2021.11.01 17:44:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:38 INFO  C:\Users\matth\revature\project1\src\main\scala\example\api.scala:24:73: stale bloop error: unclosed string literal
+    val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/""
+                                                                        ^[0m
+[0m2021.11.01 17:44:38 INFO  C:\Users\matth\revature\project1\src\main\scala\example\api.scala:24:73: stale bloop error: unclosed string literal
+    val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/""
+                                                                        ^[0m
+[0m2021.11.01 17:44:39 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:44:39 INFO  time: compiled root in 0.53s[0m
+[0m2021.11.01 17:44:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:44:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:10 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:45:10 INFO  time: compiled root in 0.47s[0m
+[0m2021.11.01 17:45:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:45:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:46:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:46:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:46:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:46:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:46:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:46:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:47:57 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals7717137309548822874\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:47:59 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:47:59 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:48:01 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:48:01 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:48:01 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:48:05 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:48:05 INFO  [success] Total time: 3 s, completed Nov 1, 2021 5:48:05 PM[0m
+[0m2021.11.01 17:48:10 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:48:10 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:48:11 INFO  [warn] [0m
+[0m2021.11.01 17:48:11 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:48:11 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:48:11 INFO  [error]   Not found[0m
+[0m2021.11.01 17:48:11 INFO  [error]   Not found[0m
+[0m2021.11.01 17:48:11 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:48:11 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:48:11 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:48:11 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:48:11 INFO  [error]   Not found[0m
+[0m2021.11.01 17:48:11 INFO  [error]   Not found[0m
+[0m2021.11.01 17:48:11 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:48:11 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:48:11 INFO  [error] Total time: 1 s, completed Nov 1, 2021 5:48:12 PM[0m
+[0m2021.11.01 17:48:12 INFO  time: ran 'sbt bloopInstall' in 14s[0m
+[0m2021.11.01 17:48:12 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals7717137309548822874\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:48:12 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:48:12 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:48:12 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:48:12 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:48:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:48:12 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:48:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:48:12 INFO  time: Connected to build server in 0.88s[0m
+[0m2021.11.01 17:48:12 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:48:12 INFO  time: Imported build in 0.17s[0m
+[0m2021.11.01 17:48:14 INFO  time: indexed workspace in 1.62s[0m
+[0m2021.11.01 17:48:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:48:15 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:48:51 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:48:51 INFO  time: compiled root in 0.73s[0m
+[0m2021.11.01 17:48:59 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:49:00 INFO  shutting down Metals[0m
+[0m2021.11.01 17:49:00 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:49:00 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:49:15 INFO  Started: Metals version 0.10.8 in workspace 'C:\Users\matth\revature\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.11.01 17:49:16 INFO  time: initialize in 0.55s[0m
+[0m2021.11.01 17:49:17 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:49:17 INFO  skipping build import with status 'Failed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 26702'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:26702...
+The server is listening for incoming connections at tcp://127.0.0.1:26702...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 17:49:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:49:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 19736'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:19736...
+The server is listening for incoming connections at tcp://127.0.0.1:19736...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 17:49:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:49:19 INFO  time: Connected to build server in 2.03s[0m
+[0m2021.11.01 17:49:19 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:49:20 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.01 17:49:23 INFO  time: code lens generation in 5.81s[0m
+[0m2021.11.01 17:49:23 INFO  time: Imported build in 0.66s[0m
+[0m2021.11.01 17:49:32 INFO  time: indexed workspace in 9.11s[0m
+[0m2021.11.01 17:49:33 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:49:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:49:38 INFO  compiling root (2 scala sources)[0m
+Nov 01, 2021 5:49:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+[0m2021.11.01 17:49:39 INFO  time: compiled root in 1.58s[0m
+[0m2021.11.01 17:49:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:49:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:49:42 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:49:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:49:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:49:46 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:50:04 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:50:04 INFO  time: compiled root in 0.47s[0m
+[0m2021.11.01 17:50:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:50:08 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 5:50:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 37
+[0m2021.11.01 17:50:13 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals6581158828209058223\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 17:50:15 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 17:50:16 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 17:50:16 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 17:50:18 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 17:50:18 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 17:50:21 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 17:50:21 INFO  [info] compiling 1 Scala source to C:\Users\matth\revature\project1\project\target\scala-2.12\sbt-1.0\classes ...[0m
+[0m2021.11.01 17:50:27 INFO  [info] done compiling[0m
+[0m2021.11.01 17:50:27 INFO  [success] Total time: 8 s, completed Nov 1, 2021 5:50:27 PM[0m
+[0m2021.11.01 17:50:30 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 17:50:30 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 17:50:31 INFO  [warn] [0m
+[0m2021.11.01 17:50:31 INFO  [warn] 	Note: Unresolved dependencies path:[0m
+[0m2021.11.01 17:50:31 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:50:31 INFO  [error]   Not found[0m
+[0m2021.11.01 17:50:31 INFO  [error]   Not found[0m
+[0m2021.11.01 17:50:31 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:50:31 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m2021.11.01 17:50:31 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)[0m
+[0m2021.11.01 17:50:31 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.lihaoyi:upickle_2.11:0.9.5[0m
+[0m2021.11.01 17:50:31 INFO  [error]   Not found[0m
+[0m2021.11.01 17:50:31 INFO  [error]   Not found[0m
+[0m2021.11.01 17:50:31 INFO  [error]   not found: C:\Users\matth\.ivy2\localcom.lihaoyi\upickle_2.11\0.9.5\ivys\ivy.xml[0m
+[0m2021.11.01 17:50:31 INFO  [error]   not found: https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.11/0.9.5/upickle_2.11-0.9.5.pom[0m
+[0m2021.11.01 17:50:31 INFO  [error] Total time: 1 s, completed Nov 1, 2021 5:50:31 PM[0m
+[0m2021.11.01 17:50:31 INFO  time: ran 'sbt bloopInstall' in 18s[0m
+[0m2021.11.01 17:50:31 ERROR sbt command failed: C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals6581158828209058223\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.11.01 17:50:31 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 17:50:31 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 17:50:31 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.11.01 17:50:31 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:50:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:50:32 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 17:50:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 17:50:32 INFO  time: Connected to build server in 0.8s[0m
+[0m2021.11.01 17:50:32 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 17:50:34 INFO  time: indexed workspace in 1.41s[0m
+[0m2021.11.01 17:50:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 17:50:34 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 17:50:35 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 17:50:35 INFO  time: compiled root in 1.41s[0m
+[0m2021.11.01 18:00:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:00:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:25 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:29 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:34 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 18:01:34 INFO  time: compiled root in 0.51s[0m
+[0m2021.11.01 18:01:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:01:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:13 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:17 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 18:02:17 INFO  time: compiled root in 0.93s[0m
+[0m2021.11.01 18:02:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:24 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 18:02:24 INFO  time: compiled root in 0.66s[0m
+[0m2021.11.01 18:02:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:29 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 18:02:29 INFO  time: compiled root in 0.44s[0m
+[0m2021.11.01 18:02:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:02:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:16 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:40 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 18:03:40 INFO  time: compiled root in 0.95s[0m
+[0m2021.11.01 18:03:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:43 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:03:45 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:05:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:05:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:05:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 18:05:20 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:48:59 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:27 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:48 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:49:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:00 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:03 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:50:35 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:00 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals1602214051025793350\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 21:52:02 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 21:52:04 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 21:52:04 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 21:52:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:06 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 21:52:06 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 21:52:06 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:10 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 21:52:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:10 INFO  [success] Total time: 4 s, completed Nov 1, 2021 9:52:11 PM[0m
+[0m2021.11.01 21:52:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:15 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 21:52:15 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 21:52:21 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.11.01 21:52:21 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.11.01 21:52:21 INFO  [success] Total time: 6 s, completed Nov 1, 2021 9:52:21 PM[0m
+[0m2021.11.01 21:52:21 INFO  time: ran 'sbt bloopInstall' in 21s[0m
+[0m2021.11.01 21:52:21 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 21:52:23 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.11.01 21:52:23 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.11.01 21:52:23 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 21:52:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 21:52:25 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 21:52:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 21:52:26 INFO  time: Connected to build server in 2.45s[0m
+[0m2021.11.01 21:52:26 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 21:52:26 INFO  time: Imported build in 0.42s[0m
+[0m2021.11.01 21:52:31 INFO  time: indexed workspace in 4.47s[0m
+[0m2021.11.01 21:52:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:52:33 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 21:53:14 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.8' (since 49.241s)[0m
+[0m2021.11.01 21:53:14 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 21:53:14 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 21:53:16 INFO  time: compiled root in 1.35s[0m
+[0m2021.11.01 21:53:17 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:21 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 21:53:21 INFO  time: compiled root in 0.84s[0m
+[0m2021.11.01 21:53:24 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 21:53:24 INFO  time: compiled root in 0.46s[0m
+[0m2021.11.01 21:53:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:26 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:28 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:34 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:47 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:49 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:53 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 21:53:53 INFO  time: compiled root in 0.66s[0m
+[0m2021.11.01 21:53:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:53:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:01 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:10 INFO  compiling root (2 scala sources)[0m
+[0m2021.11.01 21:54:12 INFO  time: compiled root in 1.44s[0m
+[0m2021.11.01 21:54:36 INFO  running 'C:\Users\matth\.jabba\jdk\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\matth\AppData\Local\Temp\metals8642481526753471500\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.11.01 21:54:39 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:40 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m2021.11.01 21:54:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:42 INFO  [info] loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.11.01 21:54:43 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project\project[0m
+[0m2021.11.01 21:54:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:44 INFO  [info] loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.11.01 21:54:44 INFO  [info] loading project definition from C:\Users\matth\revature\project1\project[0m
+[0m2021.11.01 21:54:48 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.11.01 21:54:48 INFO  [success] Total time: 5 s, completed Nov 1, 2021 9:54:49 PM[0m
+[0m2021.11.01 21:54:49 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.11.01 21:54:49 INFO  [info] set current project to project1 (in build file:/C:/Users/matth/revature/project1/)[0m
+[0m2021.11.01 21:54:51 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.11.01 21:54:51 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.11.01 21:54:51 INFO  [success] Total time: 2 s, completed Nov 1, 2021 9:54:51 PM[0m
+[0m2021.11.01 21:54:52 INFO  time: ran 'sbt bloopInstall' in 15s[0m
+[0m2021.11.01 21:54:52 INFO  Disconnecting from Bloop session...[0m
+[0m2021.11.01 21:54:52 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 21:54:52 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 21:54:52 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 21:54:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 21:54:52 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 21:54:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 21:54:53 INFO  time: Connected to build server in 1.36s[0m
+[0m2021.11.01 21:54:53 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 21:54:53 INFO  time: Imported build in 0.23s[0m
+[0m2021.11.01 21:54:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:56 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 21:54:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:54:57 INFO  time: indexed workspace in 3.69s[0m
+[0m2021.11.01 21:54:57 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:55:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:55:23 INFO  shutting down Metals[0m
+[0m2021.11.01 21:55:23 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 21:55:23 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 21:55:44 INFO  Started: Metals version 0.10.8 in workspace 'C:\Users\matth\revature\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.11.01 21:55:45 INFO  time: initialize in 1.27s[0m
+[0m2021.11.01 21:55:46 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 21:55:46 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 19099'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:19099...
+The server is listening for incoming connections at tcp://127.0.0.1:19099...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 21:55:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 21:55:48 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 26657'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:26657...
+The server is listening for incoming connections at tcp://127.0.0.1:26657...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 21:55:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 21:55:49 INFO  time: Connected to build server in 3.16s[0m
+[0m2021.11.01 21:55:49 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 21:55:51 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.01 21:55:53 INFO  time: code lens generation in 6.21s[0m
+[0m2021.11.01 21:55:53 INFO  time: Imported build in 0.26s[0m
+[0m2021.11.01 21:55:55 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.01 21:55:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 21:55:57 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 21:56:05 INFO  time: indexed workspace in 11s[0m
+[0m2021.11.01 21:56:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:16:30 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:16:30 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 10:16:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Nov 01, 2021 10:16:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+[0m2021.11.01 22:16:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:16:31 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:16:32 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:16:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:16:37 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:16:40 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:16:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:18:55 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 10:18:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.11.01 22:18:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:19:05 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:21:04 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 10:50:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 47
+[0m2021.11.01 22:50:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:50:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:50:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:50:51 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:50:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:50:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:50:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:50:58 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:51:11 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 22:51:13 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 10:51:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.11.01 22:51:13 INFO  time: compiled root in 1.92s[0m
+Nov 01, 2021 10:51:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 69
+[0m2021.11.01 22:51:15 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 22:51:16 INFO  time: compiled root in 1.28s[0m
+[0m2021.11.01 22:51:39 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 10:51:39 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.11.01 22:51:40 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 10:51:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.11.01 22:51:40 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 10:51:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.11.01 22:51:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:51:44 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:51:50 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:51:50 WARN  unsupported Scala 2.11.8[0m
+Nov 01, 2021 10:51:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:222)
+	at scala.meta.internal.pc.HoverProvider.hoverOffset(HoverProvider.scala:128)
+	at scala.meta.internal.pc.HoverProvider.$anonfun$hover$1(HoverProvider.scala:24)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+[0m2021.11.01 22:51:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:51:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:51:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:51:53 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:51:55 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:01 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 22:52:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:01 INFO  time: compiled root in 0.35s[0m
+[0m2021.11.01 22:52:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:02 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:04 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:07 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:10 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:11 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:12 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 22:52:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:12 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:12 INFO  time: compiled root in 0.38s[0m
+[0m2021.11.01 22:52:12 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:14 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:19 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:21 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:23 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:24 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:28 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:29 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:30 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:33 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:35 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:35 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:35 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:35 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:35 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:34 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:36 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:38 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:39 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:41 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:43 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:45 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:51 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:52 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:53 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:52:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:52:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:53:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:53:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:53:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:53:01 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:53:05 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:53:05 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:05 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:53:05 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:53:05 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:53:06 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:53:06 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:06 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:53:06 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:53:06 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:53:07 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:53:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:53:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:53:09 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:53:15 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:1: stale bloop error: unclosed string literal
+"create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+^[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:21: stale bloop error: unclosed string literal
+stored as textfile; "           );
+                    ^[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile; "           );
+                  ^[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:76:11: stale bloop error: ';' expected but identifier found.
+        } catch {
+          ^[0m
+[0m2021.11.01 22:53:17 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:17: stale bloop error: unclosed string literal
+                "create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+                ^[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:17: stale bloop error: unclosed string literal
+                "create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+                ^[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:20: stale bloop error: unclosed string literal
+stored as textfile;"
+                   ^[0m
+[0m2021.11.01 22:53:17 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile;"
+                  ^[0m
+[0m2021.11.01 22:53:17 INFO  time: compiled root in 0.25s[0m
+[0m2021.11.01 22:53:28 INFO  shutting down Metals[0m
+[0m2021.11.01 22:53:28 INFO  Shut down connection with build server.[0m
+[0m2021.11.01 22:53:28 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.11.01 22:53:44 INFO  Started: Metals version 0.10.8 in workspace 'C:\Users\matth\revature\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.11.01 22:53:44 INFO  time: initialize in 0.55s[0m
+[0m2021.11.01 22:53:45 INFO  Attempting to connect to the build server...[0m
+[0m2021.11.01 22:53:45 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 25628'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:25628...
+The server is listening for incoming connections at tcp://127.0.0.1:25628...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 22:53:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 22:53:46 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 32903'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:32903...
+The server is listening for incoming connections at tcp://127.0.0.1:32903...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.11.01 22:53:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\matth\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.11.01 22:53:47 INFO  time: Connected to build server in 1.88s[0m
+[0m2021.11.01 22:53:47 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2021.11.01 22:53:49 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2021.11.01 22:53:49 INFO  time: code lens generation in 4.2s[0m
+[0m2021.11.01 22:53:50 INFO  time: Imported build in 0.13s[0m
+[0m2021.11.01 22:53:54 INFO  time: indexed workspace in 3.93s[0m
+[0m2021.11.01 22:53:54 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:53:54 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 22:53:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:17: stale bloop error: unclosed string literal
+                "create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+                ^[0m
+[0m2021.11.01 22:53:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:17: stale bloop error: unclosed string literal
+                "create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+                ^[0m
+[0m2021.11.01 22:53:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:20: stale bloop error: unclosed string literal
+stored as textfile;"
+                   ^[0m
+[0m2021.11.01 22:53:54 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile;"
+                  ^[0m
+[0m2021.11.01 22:53:55 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.11.01 22:53:55 INFO  time: compiled root in 1.66s[0m
+[0m2021.11.01 22:53:56 WARN  unsupported Scala 2.11.8[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:17: stale bloop error: unclosed string literal
+                "create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+                ^[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:20: stale bloop error: unclosed string literal
+stored as textfile;"
+                   ^[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile;"
+                  ^[0m
+[0m2021.11.01 22:53:55 INFO  compiling root (1 scala source)[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:17: stale bloop error: unclosed string literal
+                "create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+                ^[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:72:17: stale bloop error: unclosed string literal
+                "create table totals(id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+                ^[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:73:53: stale bloop error: unclosed character literal
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+                                                    ^[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:20: stale bloop error: unclosed string literal
+stored as textfile;"
+                   ^[0m
+[0m2021.11.01 22:53:56 INFO  C:\Users\matth\revature\project1\src\main\scala\example\main.scala:74:19: stale bloop error: ')' expected but ';' found.
+stored as textfile;"
+                  ^[0m
+[0m2021.11.01 22:53:56 INFO  time: compiled root in 0.28s[0m

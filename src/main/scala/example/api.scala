@@ -17,25 +17,14 @@ import java.io.PrintWriter;
 
 
 
+
+
 object GetUrlContent extends App {
 
-    val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/"
-
-        
-
-        simpleApi(path)
-        // var data = getRestContent(
-        //     "https://reqres.in/api/users"
-        // )
-        // println(data)
-
-        //var data = getRestContent("https://gorest.co.in/public/v1/posts")
-        //var data = getRestContent("https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=a6d9bb29231ea761de5367730a1a8961&regions=us&markets=spreads&dateFormat=iso&oddsFormat=american" )
-        //createFile(data) 
+    
     
 
-
-    def simpleApi(path: String): String = {
+    def simpleApi() {
         //hockey link 1 (spread)
         //https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=a6d9bb29231ea761de5367730a1a8961&regions=us&markets=spreads&dateFormat=iso&oddsFormat=american        
         
@@ -45,16 +34,16 @@ object GetUrlContent extends App {
         //hockey link 3 (over)
         //https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=a6d9bb29231ea761de5367730a1a8961&regions=us&markets=totals&dateFormat=iso&oddsFormat=american
 
-        //val url = "http://api.hostip.info/get_json.php?ip=12.215.42.19"
         val url = "https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=a6d9bb29231ea761de5367730a1a8961&regions=us&markets=spreads&dateFormat=iso&oddsFormat=american"        
-
-        //val result = scala.io.Source.fromURL(url).mkString
+        val url2 = "https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=a6d9bb29231ea761de5367730a1a8961&regions=us&markets=h2h&dateFormat=iso&oddsFormat=american"
+        val url3 = "https://api.the-odds-api.com/v4/sports/icehockey_nhl/odds?apiKey=a6d9bb29231ea761de5367730a1a8961&regions=us&markets=totals&dateFormat=iso&oddsFormat=american"
         val result = getRestContent(url)
-        val data: ujson.Value = ujson.read(result)
-        //val myArray = data.arr
-        //println(data)
-        data
-        ///createFile(path, jsonString)
+        val result2 = getRestContent(url2)
+        val result3 = getRestContent(url3)
+
+        createFile(result, 1)
+        createFile(result2, 2)
+        createFile(result3, 3)
     }
 
     /** Returns the text content from a REST URL. Returns a blank String if there
@@ -75,8 +64,15 @@ object GetUrlContent extends App {
         return content
     }
 
-    def createFile(path:String, result: String): Unit = {
-        val filename = path + "data.txt"
+    def createFile(result: String, file: Int): Unit = {
+        val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/"
+        var filename = ""
+        file match{
+            case 1 => filename = path + "spreads.txt"
+            case 2 => filename = path + "h2h.txt"
+            case 3 => filename = path + "totals.txt"
+        }
+        println(filename)
         //println(s"Creating file $filename ...")
     
         val conf = new Configuration()
@@ -98,12 +94,23 @@ object GetUrlContent extends App {
         writer.close()
     
         println(s"Done creating file $filename ...")
-        copytoLocal(path)
+        copytoLocal(file)
     } 
 
-    def copytoLocal(path: String): Unit = {
-        val target = "file:///home/maria_dev/data.txt"
-        val src = path + "data.txt"
+    def copytoLocal(file: Int): Unit = {
+        val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/"
+        var target = ""
+         file match{
+            case 1 => target = "file:///home/maria_dev/spreads.txt"
+            case 2 => target = "file:///home/maria_dev/h2h.txt"
+            case 3 => target =  "file:///home/maria_dev/totals.txt"
+        }
+        var src = ""
+        file match{
+            case 1 => src = path + "spreads.txt"
+            case 2 => src = path + "h2h.txt"
+            case 3 => src = path + "totals.txt"
+        }
         println(s"Copying local file $src to $target ...")
     
         val conf = new Configuration()

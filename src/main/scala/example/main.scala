@@ -26,12 +26,16 @@ object project{
 
 
     def main(args: Array[String]){
-        val result = GetUrlContent.simpleApi(path)
+        GetUrlContent.simpleApi()
 
-        implicit val formats = DefaultFormats
-        val jsonString = write(result)
+        //val data = result.toJson()
 
-        GetUrlContent.createFile(path, result)
+        //val myArray = data.arr
+        //println(data)
+        //implicit val formats = DefaultFormats
+        //val jsonString = write(result)
+
+        //GetUrlContent.createFile(path, result)
         var con = connectToHive()
         //val t = new Tuple2("admin", true)
         
@@ -52,7 +56,7 @@ object project{
             //create db
             val stmt = con.createStatement()
             //var res = stmt.executeQuery("create database if not exists bets")
-            var res = stmt.executeQuery("Show databases");
+            var res = stmt.executeQuery("Show tables");
             if (res.next()) {
                 System.out.println(res.getString(1));
             }
@@ -60,13 +64,22 @@ object project{
             //res = stmt.executeQuery("use bets")
 
             //create table
-            val tableName = "odds";
-            //println(s"Dropping table $tableName..")
-            stmt.execute("drop table IF EXISTS " + tableName);
-            println(s"Creating table $tableName..")
-            stmt.execute(
-                "create table " + tableName + s" (key int, sports_key string, sports_title string, start_time string, home_team string, away_team string) row format delimited  fields terminated by ','"
-            );
+//             val tableName = "h2h";
+//             //println(s"Dropping table $tableName..")
+//             stmt.execute("drop table IF EXISTS " + tableName);
+//             println(s"Creating table $tableName..")
+//             stmt.execute(
+//                 s"create external table ${tableName} (id string, sport_key string, sport_title string, commence_time string, home_team string, away_team string, bookmakers struct<key: string, title: string, last_update: string, markets: struct<key: string, outcomes: struct<name: string, price: int, point: int>>>)
+// row format serde 'org.openx.data.jsonserde.JsonSerDe'
+// stored as textfile;"
+//             );
+            //res = stmt.executeQuery("add jar hdfs:///user/maria_dev/.hiveJars/json-udf-1.3.8-jar-with-dependencies.jar;")
+            //res = stmt.executeQuery("add jar hdfs:///user/maria_dev/.hiveJars/json-serde-1.3.8-jar-with-dependencies.jar;")
+
+
+            res = stmt.executeQuery("LOAD DATA LOCAL INPATH 'file:///home/maria_dev/spreads.txt' OVERWRITE INTO TABLE spreads")
+            res = stmt.executeQuery("LOAD DATA LOCAL INPATH 'file:///home/maria_dev/h2h.txt' OVERWRITE INTO TABLE h2h")
+            res = stmt.executeQuery("LOAD DATA LOCAL INPATH 'file:///home/maria_dev/totals.txt' OVERWRITE INTO TABLE totals")
 
         } catch {
             case ex: Throwable => {
@@ -85,15 +98,6 @@ object project{
             // }
         }
         con
-    }
-
-    /**
-      * This will load the data into the table
-      *
-      * @param con
-      */
-    def loadData(con: Connection){
-        println("Eventually load data")
     }
 
     /**
@@ -122,7 +126,7 @@ object project{
 
             val changesInfo: String = "What changes would you like to make to your account: "
             val changesBasicChoices: String = "1. Change username \n2. Change password"
-            val changesAdminChoices: String = "1. Change username \n2. Change password \n3. Load Data \n4. Add User \n5. Show all users "
+            val changesAdminChoices: String = "1. Change username \n2. Change password \n3. Add User \n4. Show all users "
 
             answer = getUserInput(intro, startingScreen)
             answer match {
@@ -190,12 +194,9 @@ object project{
                                 changePassword(user)
                             }
                             case 3 => {
-                                loadData(con)
-                            }
-                            case 4 => {
                                 addUser()
                             }
-                            case 5 => {
+                            case 4 => {
                                 showUsers()
                             }
                             case _ => {
@@ -289,16 +290,16 @@ object project{
       * @param choice
       */
     def showAll(con: Connection, choice: Int): Unit = {
-        var sql = "select * from odds"
+        var sql = ""
         choice match {
             case 1 => {
-                sql += " where markets.key = h2h"
+                sql += "select * from h2h"
             }
             case 2 => {
-                sql += " where markets.key = spreads"
+                sql += "select * from spreads"
             }
             case 3 => {
-                sql += " where markets.key = totals"
+                sql += "select * from totals"
             }
         }
         
@@ -321,20 +322,20 @@ object project{
     def searchTeam(con: Connection, choice: Int): Unit = {
         print("Which team would you like to find: ")
         val team: String = StdIn.readLine()
-        var sql = "select * from odds "
+        var sql = ""
         choice match{
             case 1 => {
                 //team h2h
-                sql += s" where markets.key = h2h and (home_team = ${team} or away_team = ${team})"
+                sql += s"select * from h2h where home_team = ${team} or away_team = ${team}"
             }
             case 2 => {
                 //team spread
-                sql += s" where markets.key = spreads and (home_team = ${team} or away_team = ${team})"
+                sql += s" select * from spreads home_team = ${team} or away_team = ${team}"
 
             }
             case 3 => {
                 //team over
-                sql += s" where markets.key = totals and (home_team = ${team} or away_team = ${team})"
+                sql += s"select * from totals home_team = ${team} or away_team = ${team}"
 
             }
         }
