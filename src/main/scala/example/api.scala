@@ -12,6 +12,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import java.io.PrintWriter;
+import scala.annotation.varargs
 
 
 
@@ -41,9 +42,14 @@ object GetUrlContent extends App {
         val result2 = getRestContent(url2)
         val result3 = getRestContent(url3)
 
-        createFile(result, 1)
-        createFile(result2, 2)
-        createFile(result3, 3)
+        //json setup
+        val file1Text = config(result)
+        val file2Text = config(result2)
+        val file3Text = config(result3)
+
+        createFile(file1Text, 1)
+        createFile(file2Text, 2)
+        createFile(file3Text, 3)
     }
 
     /** Returns the text content from a REST URL. Returns a blank String if there
@@ -68,9 +74,9 @@ object GetUrlContent extends App {
         val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/"
         var filename = ""
         file match{
-            case 1 => filename = path + "spreads.txt"
-            case 2 => filename = path + "h2h.txt"
-            case 3 => filename = path + "totals.txt"
+            case 1 => filename = path + "spreads.json"
+            case 2 => filename = path + "h2h.json"
+            case 3 => filename = path + "totals.json"
         }
         println(filename)
         //println(s"Creating file $filename ...")
@@ -101,15 +107,15 @@ object GetUrlContent extends App {
         val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/"
         var target = ""
          file match{
-            case 1 => target = "file:///home/maria_dev/spreads.txt"
-            case 2 => target = "file:///home/maria_dev/h2h.txt"
-            case 3 => target =  "file:///home/maria_dev/totals.txt"
+            case 1 => target = "file:///home/maria_dev/spreads.json"
+            case 2 => target = "file:///home/maria_dev/h2h.json"
+            case 3 => target =  "file:///home/maria_dev/totals.json"
         }
         var src = ""
         file match{
-            case 1 => src = path + "spreads.txt"
-            case 2 => src = path + "h2h.txt"
-            case 3 => src = path + "totals.txt"
+            case 1 => src = path + "spreads.json"
+            case 2 => src = path + "h2h.json"
+            case 3 => src = path + "totals.json"
         }
         println(s"Copying local file $src to $target ...")
     
@@ -122,5 +128,13 @@ object GetUrlContent extends App {
         //fs.copyFromLocalFile(false, localpath, hdfspath)
         fs.copyToLocalFile(false, localpath, hdfspath)
         println(s"Done copying local file $src to $target ...")
+    }
+
+    def config(res: String): String = {
+        val endofline = "}]}]}]},"
+        val correct = "}]}]}]}\n"
+        var changed = res.replace(endofline, correct)
+        changed = changed.substring(1, changed.length()-1)
+        changed
     }
 }
