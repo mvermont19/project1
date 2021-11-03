@@ -52,8 +52,8 @@ object project{
             //System.out.println("show database successfully");
             //res = stmt.executeQuery("use bets")
 
-            //res = stmt.executeQuery("add jar hdfs:///user/maria_dev/.hiveJars/json-udf-1.3.8-jar-with-dependencies.jar;")
-            //res = stmt.executeQuery("add jar hdfs:///user/maria_dev/.hiveJars/json-serde-1.3.8-jar-with-dependencies.jar;")
+            //stmt.execute("add jar hdfs:///user/maria_dev/.hiveJars/json-udf-1.3.8-jar-with-dependencies.jar;")
+            //stmt.execute("add jar hdfs:///user/maria_dev/.hiveJars/json-serde-1.3.8-jar-with-dependencies.jar;")
 
             //create table
             val tableName = Array("h2h", "spreads", "totals");
@@ -108,11 +108,10 @@ object project{
         //var user = login()
 
         while(!exit){
-            println("")
-            Thread.sleep(1000)
+            //println("")
+            //Thread.sleep(1000)
             
             val loginChoices: String = "1. Create User \n2. Login \n3. Exit"
-
 
             answer = getUserInput("", loginChoices)
             answer match {
@@ -314,25 +313,74 @@ object project{
       */
     def showAll(con: Connection, choice: Int): Unit = {
         var sql = ""
+        val stmt = con.createStatement();
+        //select get_json_object(json,'$.ecode') as ecode, get_json_object(json,'$.b') as code, get_json_object(json,'$.c') from complexjson;
         choice match {
             case 1 => {
-                sql += "select * from h2h"
+                sql += "select get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price'), " + 
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price') from h2h"
+
+                    /*"select get_json_object(json,'$.home_team') as home, get_json_object(json,'$.away_team') as away," +
+                  "get_json_object(json,'$.bookmakers.markets.outcomes.price') as line, get_json_object(json,'$.bookmakers.key') as key from h2h " +
+                  "where get_json_object(json,'$.bookmakers.key') = \"fanduel\""*/
+
+                val res = stmt.executeQuery(sql);
+                printf("%-22s%-22s%-22s%-22s\n", "Team", "Line", "Team", "Line")
+                while (res.next()) {
+                    System.out.printf("%-22s%-22s%-22s%-22s\n",
+                        String.valueOf(res.getString(1)), 
+                        String.valueOf(res.getString(2)),
+                        String.valueOf(res.getString(3)),
+                        String.valueOf(res.getString(4))
+                    );
+                }
             }
             case 2 => {
-                sql += "select * from spreads"
+                sql += "select get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price'), " + 
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].point')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price'), " +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].point') from spreads"
+
+                val res = stmt.executeQuery(sql);
+                printf("%-22s%-22s%-13s%-22s%-22s%-13s\n", "Team", "Line", "Margin", "Team", "Line", "Margin")
+                while (res.next()) {
+                    System.out.printf("%-22s%-22s%-13s%-22s%-22s%-13s\n",
+                        String.valueOf(res.getString(1)),
+                        String.valueOf(res.getString(2)),
+                        String.valueOf(res.getString(3)),
+                        String.valueOf(res.getString(4)),
+                        String.valueOf(res.getString(5)),
+                        String.valueOf(res.getString(6))
+                    );
+                }
             }
             case 3 => {
-                sql += "select * from totals"
+                sql += "select get_json_object(json,'$.home_team')," +
+                  "get_json_object(json,'$.away_team'), " + 
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name'), " +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price'), " +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].point') from totals"
+
+                val res = stmt.executeQuery(sql);
+                printf("%-22s%-22s%-22s%-22s%-22s%-22s%-22s\n", "Home", "Away", "Over/Under", "Line", "Over/Under", "Line", "Total Score")
+                while (res.next()) {
+                    System.out.printf("%-22s%-22s%-22s%-22s%-22s%-22s%-22s\n",
+                        String.valueOf(res.getString(1)), 
+                        String.valueOf(res.getString(2)),
+                        String.valueOf(res.getString(3)),
+                        String.valueOf(res.getString(4)),
+                        String.valueOf(res.getString(5)),
+                        String.valueOf(res.getString(6)),
+                        String.valueOf(res.getString(7))
+                    );
+                }
             }
-        }
-        
-        System.out.println("Running: " + sql);
-        val stmt = con.createStatement();
-        val res = stmt.executeQuery(sql);
-        while (res.next()) {
-            System.out.println(
-                String.valueOf(res.getInt(1))
-            );
         }
     }
 
@@ -346,30 +394,74 @@ object project{
         print("Which team would you like to find: ")
         val team: String = StdIn.readLine()
         var sql = ""
+        val stmt = con.createStatement();
         choice match{
             case 1 => {
                 //team h2h
-                sql += s"select * from h2h where home_team = ${team} or away_team = ${team}"
+                sql += "select get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price'), " + 
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price') from h2h " +
+                  "where get_json_object(json,'$.home_team') = \"" + team + "\" or get_json_object(json,'$.away_team') = \"" + team + "\""
+                val res = stmt.executeQuery(sql)
+                printf("%-22s%-22s%-22s%-22s\n", "Team", "Line", "Team", "Line")
+                while (res.next()) {
+                    System.out.printf("%-22s%-22s%-22s%-22s\n",
+                        String.valueOf(res.getString(1)), 
+                        String.valueOf(res.getString(2)),
+                        String.valueOf(res.getString(3)),
+                        String.valueOf(res.getString(4))
+                    );
+                }
             }
             case 2 => {
                 //team spread
-                sql += s" select * from spreads home_team = ${team} or away_team = ${team}"
+                sql += "select get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price')," + 
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].point')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].point') from spreads " +
+                  "where get_json_object(json,'$.home_team') = \"" + team + "\" or get_json_object(json,'$.away_team') = \"" + team + "\""
 
+                val res = stmt.executeQuery(sql);
+                printf("%-22s%-22s%-13s%-22s%-22s%-13s\n", "Team", "Line", "Margin", "Team", "Line", "Margin")
+                while (res.next()) {
+                    System.out.printf("%-22s%-22s%-13s%-22s%-22s%-13s\n",
+                        String.valueOf(res.getString(1)),
+                        String.valueOf(res.getString(2)),
+                        String.valueOf(res.getString(3)),
+                        String.valueOf(res.getString(4)),
+                        String.valueOf(res.getString(5)),
+                        String.valueOf(res.getString(6))
+                    );
+                }
             }
             case 3 => {
                 //team over
-                sql += s"select * from totals home_team = ${team} or away_team = ${team}"
+                sql += "select get_json_object(json,'$.home_team')," +
+                  "get_json_object(json,'$.away_team'), " + 
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price')," +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name'), " +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price'), " +
+                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].point') from totals " +
+                  "where get_json_object(json,'$.home_team') = \"" + team + "\" or get_json_object(json,'$.away_team') = \"" + team + "\""
 
+                val res = stmt.executeQuery(sql);
+                printf("%-22s%-22s%-22s%-22s%-22s%-22s%-22s\n", "Home", "Away", "Over/Under", "Line", "Over/Under", "Line", "Total Score")
+                while (res.next()) {
+                    System.out.printf("%-22s%-22s%-22s%-22s%-22s%-22s%-22s\n",
+                        String.valueOf(res.getString(1)), 
+                        String.valueOf(res.getString(2)),
+                        String.valueOf(res.getString(3)),
+                        String.valueOf(res.getString(4)),
+                        String.valueOf(res.getString(5)),
+                        String.valueOf(res.getString(6)),
+                        String.valueOf(res.getString(7))
+                    );
+                }
             }
-        }
-        
-        System.out.println("Running: " + sql);
-        val stmt = con.createStatement();
-        val res = stmt.executeQuery(sql);
-        while (res.next()) {
-            System.out.println(
-                String.valueOf(res.getInt(1))
-            );
         }
     }
 
