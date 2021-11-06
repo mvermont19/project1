@@ -105,21 +105,19 @@ object project{
         var answer: Int = 0
         var exit: Boolean = false
 
-        //var user = login()
-
         while(!exit){
             //println("")
             //Thread.sleep(1000)
             
             val loginChoices: String = "1. Create User \n2. Login \n3. Exit"
 
-            answer = getUserInput("", loginChoices)
+            answer = User.getUserInput("", loginChoices)
             answer match {
                 case 1 => {
-                    addUser()
+                    User.addUser()
                 }
                 case 2 => {
-                    var user = login()
+                    var user = User.login()
                     var logout: Boolean = false
                     println("Welcome " + user)
                     while(!logout){
@@ -129,7 +127,7 @@ object project{
 
                         val h2hInfo: String = "What would you like to know about the Head to Head bets: "
                         val spreadInfo : String = "What would you like to know about the Spread bets: "
-                        val choices: String = "1. Show all \n2. Search for a team \n3. Biggest favorite \n4. Biggest Underdog"
+                        val choices: String = "1. Show all \n2. Search for a team \n3. Biggest Home favorite \n4. Biggest Home Underdog"
                         
                         val totalsInfo: String = "What would you like to know about the totals for a game: "
                         val totalsChoices: String = "1. Show all \n2. Search for a team \n3. Biggest over \n4. Smallest over"
@@ -138,78 +136,96 @@ object project{
                         val changesBasicChoices: String = "1. Change username \n2. Change password"
                         val changesAdminChoices: String = "1. Change username \n2. Change password \n3. Show all users "
 
-                        answer = getUserInput(intro, startingScreen)
+                        answer = User.getUserInput(intro, startingScreen)
                         answer match {
                             case 1 | 2 | 3 => {
                                 //h2h and spread and totals
                                 var original = answer
-                                if(answer == 1){
-                                    //h2h
-                                    answer = getUserInput(h2hInfo, choices)
-                                }
-                                else if(answer == 2) {
-                                    //spread
-                                    answer = getUserInput(spreadInfo, choices)
-                                }
-                                else{
-                                    //totals
-                                    answer = getUserInput(totalsInfo, totalsChoices)
-                                }
-                                answer match {
-                                    case 1 => {
-                                        //all
-                                        showAll(con, original)
+                                var firstChoiceMade = true
+                                while(firstChoiceMade){
+                                    if(original == 1){
+                                        //h2h
+                                        answer = User.getUserInput(h2hInfo, choices)
                                     }
-                                    case 2 => {
-                                        //search
-                                        searchTeam(con, original)
+                                    else if(original == 2) {
+                                        //spread
+                                        answer = User.getUserInput(spreadInfo, choices)
                                     }
-                                    case 3 => {
-                                        //Biggest (favorite)
-                                        find(con, original, true)
+                                    else{
+                                        //totals
+                                        answer = User.getUserInput(totalsInfo, totalsChoices)
                                     }
-                                    case 4 => {
-                                        //Smallest (underdog)
-                                        find(con, original, false)
-                                    }
-                                    case _ => {
-                                        println("Not a vaild choice please try again")
+                                    answer match {
+                                        case 1 => {
+                                            //all
+                                            Quiries.showAll(con, original)
+                                            firstChoiceMade = false
+                                        }
+                                        case 2 => {
+                                            //search
+                                            Quiries.searchTeam(con, original)
+                                            firstChoiceMade = false
+
+                                        }
+                                        case 3 => {
+                                            //Biggest (favorite)
+                                            Quiries.find(con, original, true)
+                                            firstChoiceMade = false
+
+                                        }
+                                        case 4 => {
+                                            //Smallest (underdog)
+                                            Quiries.find(con, original, false)
+                                            firstChoiceMade = false
+                                        }
+                                        case _ => {
+                                            println("Not a vaild choice please try again")
+                                        }
                                     }
                                 }
                             }
                             case 4 => {
                                 //user choices
-                                var isAdmin = checkAdmin(user)
-                                if(!isAdmin){
-                                    answer = getUserInput(changesInfo, changesBasicChoices)
-                                    answer match {
-                                        case 1 => {
-                                            user = changeUserName(user)
-                                        }
-                                        case 2 => {
-                                            changePassword(user)
-                                        }
-                                        case _ => {
-                                            println("Not a vaild choice please try again")
+                                var firstChoiceMade = true
+                                while(firstChoiceMade){
+                                    var isAdmin = User.checkAdmin(user)
+                                    if(!isAdmin){
+                                        answer = User.getUserInput(changesInfo, changesBasicChoices)
+                                        answer match {
+                                            case 1 => {
+                                                user = User.changeUserName(user)
+                                                firstChoiceMade = false
+                                            }
+                                            case 2 => {
+                                                User.changePassword(user)
+                                                firstChoiceMade = false
+                                            }
+                                            case _ => {
+                                                println("Not a vaild choice please try again")
+                                            }
                                         }
                                     }
-                                }
-                                else{
-                                    answer = getUserInput(changesInfo, changesAdminChoices)
-                                    answer match {
-                                        case 1 => {
-                                            user = changeUserName(user)
-                                        }
-                                        case 2 => {
-                                            changePassword(user)
-                                        }
-                                        case 3 => {
-                                            showUsers()
-                                        }     
-                                        case _ => {
-                                            println("Not a vaild choice please try again")
-                                        }
-                                    }       
+                                    else{
+                                        //admin choices
+                                        answer = User.getUserInput(changesInfo, changesAdminChoices)
+                                        answer match {
+                                            case 1 => {
+                                                user = User.changeUserName(user)
+                                                firstChoiceMade = false
+                                            }
+                                            case 2 => {
+                                                User.changePassword(user)
+                                                firstChoiceMade = false
+                                            }
+                                            case 3 => {
+                                                User.showUsers()
+                                                firstChoiceMade = false
+                                            }     
+                                            case _ => {
+                                                println("Not a vaild choice please try again")
+                                            }
+                                        }       
+                                    }
                                 }
                             }
                             case 5 => {
@@ -231,7 +247,6 @@ object project{
                             throw new Exception(s"${ex.getMessage}")
                         }
                     }
-
                 }
                 case _ => {
                     println("Not a vaild choice please try again")
@@ -239,450 +254,6 @@ object project{
                 }
             }
         
-        }
-    }
-
-    /**
-      * This helper method gets the user input while checking to make
-      * sure it is a valid choice and returns their answer
-      *
-      * @return
-      */
-    def getUserInput(strings: String*): Int = {
-      var validAnswer: Boolean = false
-      var userInput: String = ""
-      var answer = 0
-
-      while(!validAnswer){
-        println(strings(0))
-        println(strings(1))
-        userInput = StdIn.readLine()
-        if(userInput.isEmpty())  {
-          println("Please give an answer")
-        }
-        else {
-          var num: Char = userInput.charAt(0)
-          if(num.isDigit && (userInput.toInt == 1 || userInput.toInt == 2
-                              || userInput.toInt == 3 || userInput.toInt == 4  || userInput.toInt == 5)){
-            validAnswer = true
-            answer = userInput.toInt
-          }
-          else{
-            println("Not a valid answer. Try again")
-          }
-        }
-      }
-      answer
-    }
-
-    /**
-      * This function is checking to make sure the user has a valid login and password
-      */
-    def login(): String = {
-        var username = ""
-        var goodLogin = false
-        while(!goodLogin){
-            print("Please enter your username: ")
-            username = StdIn.readLine()
-            if(users.keySet.contains(username)){
-                var goodPassword = false
-                while(!goodPassword){
-                    print("Please enter your password: ")
-                    var password = StdIn.readLine()
-                    if(users.get(username).get._1.equals(password)){ 
-                        goodPassword = true
-                    }
-                    else{
-                        println("Password incorrect. Please try again")
-                    }
-                }
-                goodLogin = true
-            }
-            else{
-                println("Username not found. Please try again")
-            }
-        }
-        username
-    }
-
-    /**
-      * This function prints out all the lines saved in the database from each book
-      *
-      * @param con
-      * @param choice
-      */
-    def showAll(con: Connection, choice: Int): Unit = {
-        var sql = ""
-        val stmt = con.createStatement();
-        //select get_json_object(json,'$.ecode') as ecode, get_json_object(json,'$.b') as code, get_json_object(json,'$.c') from complexjson;
-        choice match {
-            case 1 => {
-                sql += "select get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price'), " + 
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price') from h2h"
-
-                    /*"select get_json_object(json,'$.home_team') as home, get_json_object(json,'$.away_team') as away," +
-                  "get_json_object(json,'$.bookmakers.markets.outcomes.price') as line, get_json_object(json,'$.bookmakers.key') as key from h2h " +
-                  "where get_json_object(json,'$.bookmakers.key') = \"fanduel\""*/
-
-                val res = stmt.executeQuery(sql);
-                printf("%-22s%-22s%-22s%-22s\n", "Team", "Line", "Team", "Line")
-                while (res.next()) {
-                    System.out.printf("%-22s%-22s%-22s%-22s\n",
-                        String.valueOf(res.getString(1)), 
-                        String.valueOf(res.getString(2)),
-                        String.valueOf(res.getString(3)),
-                        String.valueOf(res.getString(4))
-                    );
-                }
-            }
-            case 2 => {
-                sql += "select get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price'), " + 
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].point')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price'), " +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].point') from spreads"
-
-                val res = stmt.executeQuery(sql);
-                printf("%-22s%-22s%-13s%-22s%-22s%-13s\n", "Team", "Line", "Margin", "Team", "Line", "Margin")
-                while (res.next()) {
-                    System.out.printf("%-22s%-22s%-13s%-22s%-22s%-13s\n",
-                        String.valueOf(res.getString(1)),
-                        String.valueOf(res.getString(2)),
-                        String.valueOf(res.getString(3)),
-                        String.valueOf(res.getString(4)),
-                        String.valueOf(res.getString(5)),
-                        String.valueOf(res.getString(6))
-                    );
-                }
-            }
-            case 3 => {
-                sql += "select get_json_object(json,'$.home_team')," +
-                  "get_json_object(json,'$.away_team'), " + 
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name'), " +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price'), " +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].point') from totals"
-
-                val res = stmt.executeQuery(sql);
-                printf("%-22s%-22s%-22s%-22s%-22s%-22s%-22s\n", "Home", "Away", "Over/Under", "Line", "Over/Under", "Line", "Total Score")
-                while (res.next()) {
-                    System.out.printf("%-22s%-22s%-22s%-22s%-22s%-22s%-22s\n",
-                        String.valueOf(res.getString(1)), 
-                        String.valueOf(res.getString(2)),
-                        String.valueOf(res.getString(3)),
-                        String.valueOf(res.getString(4)),
-                        String.valueOf(res.getString(5)),
-                        String.valueOf(res.getString(6)),
-                        String.valueOf(res.getString(7))
-                    );
-                }
-            }
-        }
-    }
-
-    /**
-      * This prints out the lines for a specific team from each book
-      *
-      * @param con
-      * @param choice
-      */
-    def searchTeam(con: Connection, choice: Int): Unit = {
-        print("Which team would you like to find: ")
-        val team: String = StdIn.readLine()
-        var sql = ""
-        val stmt = con.createStatement();
-        choice match{
-            case 1 => {
-                //team h2h
-                sql += "select get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price'), " + 
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price') from h2h " +
-                  "where get_json_object(json,'$.home_team') = \"" + team + "\" or get_json_object(json,'$.away_team') = \"" + team + "\""
-                val res = stmt.executeQuery(sql)
-                printf("%-22s%-22s%-22s%-22s\n", "Team", "Line", "Team", "Line")
-                while (res.next()) {
-                    System.out.printf("%-22s%-22s%-22s%-22s\n",
-                        String.valueOf(res.getString(1)), 
-                        String.valueOf(res.getString(2)),
-                        String.valueOf(res.getString(3)),
-                        String.valueOf(res.getString(4))
-                    );
-                }
-            }
-            case 2 => {
-                //team spread
-                sql += "select get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price')," + 
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].point')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].point') from spreads " +
-                  "where get_json_object(json,'$.home_team') = \"" + team + "\" or get_json_object(json,'$.away_team') = \"" + team + "\""
-
-                val res = stmt.executeQuery(sql);
-                printf("%-22s%-22s%-13s%-22s%-22s%-13s\n", "Team", "Line", "Margin", "Team", "Line", "Margin")
-                while (res.next()) {
-                    System.out.printf("%-22s%-22s%-13s%-22s%-22s%-13s\n",
-                        String.valueOf(res.getString(1)),
-                        String.valueOf(res.getString(2)),
-                        String.valueOf(res.getString(3)),
-                        String.valueOf(res.getString(4)),
-                        String.valueOf(res.getString(5)),
-                        String.valueOf(res.getString(6))
-                    );
-                }
-            }
-            case 3 => {
-                //team over
-                sql += "select get_json_object(json,'$.home_team')," +
-                  "get_json_object(json,'$.away_team'), " + 
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].name')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[0].price')," +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].name'), " +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].price'), " +
-                  "get_json_object(json,'$.bookmakers[0].markets.outcomes[1].point') from totals " +
-                  "where get_json_object(json,'$.home_team') = \"" + team + "\" or get_json_object(json,'$.away_team') = \"" + team + "\""
-
-                val res = stmt.executeQuery(sql);
-                printf("%-22s%-22s%-22s%-22s%-22s%-22s%-22s\n", "Home", "Away", "Over/Under", "Line", "Over/Under", "Line", "Total Score")
-                while (res.next()) {
-                    System.out.printf("%-22s%-22s%-22s%-22s%-22s%-22s%-22s\n",
-                        String.valueOf(res.getString(1)), 
-                        String.valueOf(res.getString(2)),
-                        String.valueOf(res.getString(3)),
-                        String.valueOf(res.getString(4)),
-                        String.valueOf(res.getString(5)),
-                        String.valueOf(res.getString(6)),
-                        String.valueOf(res.getString(7))
-                    );
-                }
-            }
-        }
-    }
-
-    /**
-      * This prints out the biggest favorite (lowest neg number) or biggest underdog(biggest pos number)
-      * or the biggest over based off the choices
-      *
-      * @param con
-      * @param choice
-      * @param findFav
-      */
-    def find(con: Connection, choice: Int, findFav: Boolean): Unit = {
-        choice match {
-            case 1 => {
-                var num: Int = 0
-                if(findFav){
-                    //h2h biggest favorite
-
-                }
-                else{
-                    //h2h biggest underdog
-
-                }
-            }
-            case 2 => {
-                if(findFav){
-                    //spread biggest favorite
-
-                }
-                else{
-                    //spread biggest underdog
-
-                }
-            }
-            case 3 => {
-                if(findFav){
-                    //biggest over
-
-                }
-                else{
-                    //smallest over
-
-                }
-
-            }
-        }
-    }
-
-    /**
-      * Returns if the user is an admin or not
-      *
-      * @param user
-      * @return
-      */
-    def checkAdmin(user: String): Boolean = {
-        var isAdmin = false
-        if(users.get(user).get._2 == true){ 
-            isAdmin = true
-        }
-        isAdmin
-    }   
-
-    /**
-      * This changes the username of the current user and returns it
-      */
-    def changeUserName(user: String): String ={
-        var newUser = ""
-        var goodUsername = false
-        while(!goodUsername){
-            print("Please enter your username: ")
-            var username = StdIn.readLine()
-            if(users.keySet.contains(username) && username.equals(user)){
-                var goodPassword = false
-                while(!goodPassword){
-                    print("Please enter your password: ")
-                    var password = StdIn.readLine()
-                    if(users.get(username).get._1.equals(password)){ 
-                        var goodChange = false
-                        while(!goodChange){
-                            print("What would you like to change your username to: ")
-                            newUser = StdIn.readLine()
-                            if(!users.keySet.contains(newUser)){
-                                val pass = users.get(user).get
-                                users = users.-(user)
-                                val t = (newUser, pass)
-                                users += t
-                                println(s"User name is now: ${newUser}")
-                                goodChange = true
-                                goodPassword = true
-                                goodUsername = true
-                            }
-                            else{
-                                println("Username already exists")
-                            }
-                        }    
-                    }
-                    else{
-                        println("Password incorrect. Please try again")
-                    }
-                }
-            }
-            else{
-                println("Username not found. Please try again")
-            }
-        }
-        
-        newUser
-    }
-
-    /**
-      * This changes the password of the current user
-      */
-    def changePassword(user: String){
-        var goodUsername = false
-        while(!goodUsername){
-            print("Please enter your username: ")
-            var username = StdIn.readLine()
-            if(users.keySet.contains(username) && username.equals(user)){
-                var goodPassword = false
-                while(!goodPassword){
-                    print("Please enter your password: ")
-                    var password = StdIn.readLine()
-                    if(users.get(username).get._1.equals(password)){ 
-                        var goodChange = false
-                        while(!goodChange){
-                           print("What would you like to change your password to (Between 8-16 characters): ")
-                            val newPass = StdIn.readLine()
-                            if(checkPassword(newPass)){
-                                print("Please retype password: ")
-                                val pass2 = StdIn.readLine()
-                                if(checkPassword(pass2) && newPass.equals(pass2)){
-                                    val t = (user, (newPass, users.get(user).get._2))
-                                    users += t
-                                    println("Password has been updated")
-                                    goodChange = true
-                                    goodPassword = true
-                                    goodUsername = true
-                                }
-                                else{
-                                    println("Passwords didn't match, try again")
-                                }
-                            }
-                            else{
-                                println("Password didn't meet specs, try again")
-                            }
-                        }        
-                    }
-                    else{
-                        println("Password incorrect. Please try again")
-                    }
-                }
-            }
-            else{
-                println("Username not found. Please try again")
-            }
-        }
-    }
-
-
-    /**
-      * This adds another user to the list of eligible users
-      */
-    def addUser(){
-        var added: Boolean = false
-        while (!added){
-            print("Type in a username: ")
-            val newUser = StdIn.readLine()
-            if(!users.contains(newUser)){
-                print("Please give a password (Between 8-16 characters): ")
-                val pass1 = StdIn.readLine()
-                if(checkPassword(pass1)){
-                    print("Please retype password: ")
-                    val pass2 = StdIn.readLine()
-                    if(checkPassword(pass2) && pass1.equals(pass2)){
-                        print("Give this user admin priviladges (Type 'y' or 'n'): ")
-                        val admin = StdIn.readLine()
-                        admin match {
-                            case "y" => {
-                                val t = (newUser, (pass1, true))
-                                users += t
-                                added = true
-                            }
-                            case "n" => {
-                                val t = (newUser, (pass1, false))
-                                users += t
-                                added = true
-                            }
-                            case _ => {
-                                println("Not a valid response")
-                            }
-                        }
-                    }
-                    else{
-                        println("Passwords do not match, try again")
-                    }
-                }
-                else{
-                    println("Password does not meet specs, try again")
-                }
-            }
-            else{
-                println("Username already taken, try again")
-            }
-
-        }
-    }
-
-    /**
-      * This is a helper method to check and make sure the password meets the specs
-      */
-    def checkPassword(pass: String): Boolean = {
-        pass.length() >= 8 && pass.length() <= 16
-    }
-
-    /**
-      * Displays all the users
-      */
-    def showUsers() {
-        for(k <- users.keySet){
-            println("Username \t Password \t Is Admin")
-            println(s"${k} \t\t ${users.get(k).get._1} \t\t ${users.get(k).get._2}")
         }
     }
 }
